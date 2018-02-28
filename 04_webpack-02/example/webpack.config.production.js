@@ -7,6 +7,8 @@ module.exports = {
         filename: 'script.js', // 出力するファイル名
         path: path.join(__dirname, 'js') // 出力先のパス
     },
+
+    // この辺から、圧縮最適化用のオプション
     plugins: [
         new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.DefinePlugin({
